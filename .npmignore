@@ -3,3 +3,5 @@ src/
 .env
 .*
 test/
+tsconfig.json
+*.tgz

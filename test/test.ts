@@ -34,8 +34,8 @@ describe('Test Function', function () {
 
 describe('Test App', function () {
   const data = fs.readFileSync('./test/assets/fc-list.txt',
-      { encoding: 'utf8', flag: 'r' })
-      
+    { encoding: 'utf8', flag: 'r' })
+
   it('Options { newline:true, removeEmpty:true, select: ":style=", splitter : ": "  }', function () {
     const result = testApp(data, {
       newline: true,

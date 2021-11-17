@@ -18,9 +18,14 @@ function splitter (arr:string[], chunk:string):string[][] {
   return arr.map(str => str.split(chunk))
 }
 
+function removeEmptyString (arr:string[][]):string[][] {
+  return arr.map(arr => arr.filter(str => str))
+}
+
 module.exports = {
   newline: newline,
   removeEmpty: removeEmpty,
   select: select,
-  splitter: splitter
+  splitter: splitter,
+  removeEmptyString: removeEmptyString
 }

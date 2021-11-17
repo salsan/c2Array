@@ -18,10 +18,11 @@ const data = fs.readFileSync(process.argv[2],
         { encoding: 'utf8', flag: 'r' })
 
 console.log(c2Array(data, {
-    newline : true, // split aray based from newline character
-    removeEmpty : true, // remove empty array
+    newline : true, // split aray based from newline character - default is true
+    removeEmpty : true, // remove empty array - default is true
     select: ':style=', // select only array which respect this word and delete if is not divisibile
-    splitter: ': ' // split array in according with word choice
+    splitter: ': ', // split array in according with word choice
+    removeEmptyString: true // remove empty string on array - default is false
 }))
 ```
 

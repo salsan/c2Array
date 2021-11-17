@@ -30,6 +30,9 @@ describe('Test Function', function () {
   it('Function splitter()', function () {
     assert.strictEqual(testFunc.splitter(font, ':').length, 7)
   })
+  it('Function removeEmptyString()', function () {
+    assert.ok(testFunc.removeEmptyString(font))
+  })
 })
 
 describe('Test App', function () {
